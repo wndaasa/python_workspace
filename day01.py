@@ -9,3 +9,6 @@ if n % 2 == 0:
     print(n, '은(는) 짝수입니다.')
 else:
     print(n, '은(는) 홀수입니다.')
+    
+    
+print(arange(1, 10))
