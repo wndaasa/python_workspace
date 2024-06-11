@@ -2,7 +2,7 @@ import sys
 import numpy as np
 import cv2
 
-src = cv2.imread('rose.bmp')
+src = cv2.imread('.\\openCV\\rose.bmp')
 
 if src is None:
     print('Image load failed!')

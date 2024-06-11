@@ -5,7 +5,7 @@ import cv2
 
 
 # 그레이스케일 영상의 히스토그램
-src = cv2.imread('lenna.bmp', cv2.IMREAD_GRAYSCALE)
+src = cv2.imread('.\\openCV\\lenna.bmp', cv2.IMREAD_GRAYSCALE)
 
 if src is None:
     print('Image load failed!')
@@ -20,7 +20,7 @@ plt.plot(hist)
 plt.show()
 
 # 컬러 영상의 히스토그램
-src = cv2.imread('lenna.bmp')
+src = cv2.imread('.\\openCV\\lenna.bmp')
 
 if src is None:
     print('Image load failed!')

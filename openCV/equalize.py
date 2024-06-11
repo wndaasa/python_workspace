@@ -4,7 +4,7 @@ import cv2
 
 
 # 그레이스케일 영상의 히스토그램 평활화
-src = cv2.imread('Hawkes.jpg', cv2.IMREAD_GRAYSCALE)
+src = cv2.imread('.\\openCV\\Hawkes.jpg', cv2.IMREAD_GRAYSCALE)
 
 if src is None:
     print('Image load failed!')
@@ -19,7 +19,7 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 
 # 컬러 영상의 히스토그램 평활화
-src = cv2.imread('field.bmp')
+src = cv2.imread('.\\openCV\\field.bmp')
 
 if src is None:
     print('Image load failed!')

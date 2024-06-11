@@ -5,11 +5,13 @@ import numpy as np
 src = cv2.imread('.\\openCV\\tekapo.bmp')
 
 # 이동 변환 행렬 정의
-trn = np.array([[1, 0, 200],
-                [0, 1, 100]], dtype=np.float32)
+aff = np.array([[1, 0.5, 0],
+                [0, 1, 0]], dtype=np.float32)
+
+h, w = src.shape[:2]
 
 # 이동 변환 적용
-dst = cv2.warpAffine(src, trn, (0, 0))
+dst = cv2.warpAffine(src, aff, (w + int(h * 0.5), h))
 
 # 결과 이미지 출력
 cv2.imshow('Source Image', src)

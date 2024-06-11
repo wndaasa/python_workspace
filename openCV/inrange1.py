@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 
-src = cv2.imread('candies.png')
+src = cv2.imread('.\\openCV\\candies.png')
 #src = cv2.imread('candies2.png')
 
 if src is None:

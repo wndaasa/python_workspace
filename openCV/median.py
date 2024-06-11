@@ -2,7 +2,7 @@ import sys
 import numpy as np
 import cv2
 
-src = cv2.imread('noise.bmp', cv2.IMREAD_GRAYSCALE)
+src = cv2.imread('.\\openCV\\noise.bmp', cv2.IMREAD_GRAYSCALE)
 
 if src is None:
     print('Image load failed!')

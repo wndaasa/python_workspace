@@ -4,7 +4,7 @@ import cv2
 
 
 # 컬러 영상 불러오기
-src = cv2.imread('candies.png', cv2.IMREAD_COLOR)
+src = cv2.imread('.\\openCV\\candies.png', cv2.IMREAD_COLOR)
 
 if src is None:
     print('Image load failed!')

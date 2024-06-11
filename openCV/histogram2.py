@@ -16,7 +16,7 @@ def getGrayHistImage(hist):
     return imgHist
 
 
-src = cv2.imread('lenna.bmp', cv2.IMREAD_GRAYSCALE)
+src = cv2.imread('.\\openCV\\lenna.bmp', cv2.IMREAD_GRAYSCALE)
 
 if src is None:
     print('Image load failed!')
